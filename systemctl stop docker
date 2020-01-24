@@ -1,0 +1,19 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Fri 2020-01-24 13:02:39 +04; 35min ago
+     Docs: https://docs.docker.com
+ Main PID: 1752 (dockerd)
+    Tasks: 18
+   CGroup: /system.slice/docker.service
+           └─1752 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.534690701+04:00" level=warning msg="Your kernel does not support cgroup rt runtime"
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.534703076+04:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.534714631+04:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.534946674+04:00" level=info msg="Loading containers: start."
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.752672256+04:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.821784886+04:00" level=info msg="Loading containers: done."
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.888055023+04:00" level=info msg="Docker daemon" commit=633a0ea838 graphdriver(s)=overlay2 version=19.03.5
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.888314753+04:00" level=info msg="Daemon has completed initialization"
+янв 24 13:02:39 procyLaptop dockerd[1752]: time="2020-01-24T13:02:39.924261461+04:00" level=info msg="API listen on /var/run/docker.sock"
+янв 24 13:02:39 procyLaptop systemd[1]: Started Docker Application Container Engine.
